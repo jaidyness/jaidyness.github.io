@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: pink;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -74,18 +74,33 @@
 			turn it around! 
 			*/
 			function update() {
-				javascript myVariable = myVariable + 10; 
-			 moveBoxTo(psitionX)
-			};
+			
+			positionX = positionX + speed;	
+			 moveBoxTo(positionX);
+
+			if (positionX > boardWidth)
+					{speed = -speed;}
+
+			if (positionX < 0)
+					{speed = -speed;}
+			}
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+			positionX = 0;
+			points = points + 1;
+			changeBoxText(points);	
+			if ((speed) =>0 {
+					speed = speed + 10; 
+			}	
+			if (speed <=0) {
+					speed = speed -10;
+			}
 
-
+			varcoloStr = "rgb(255, 192, 203)";
 			};
 		})();
 	</script>
