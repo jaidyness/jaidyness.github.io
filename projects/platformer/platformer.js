@@ -43,27 +43,27 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform(100, 200, 100, 10)
-    createPlatform(400, 300, 100, 10)
-    createPlatform(200, 300, 100, 10)
-    createPlatform(500, 450, 100, 10)
+
+    
+
+    
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-    createCollectable('Amanda', 100, 200, 7, 0.9)
-    createCollectable('Jolina', 200, 150), 6, 0.7
-    createCollectable('Harley', 300, 300, 5, 0.8)
+
+
+
 
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-    createCannon('left', 100, 200)// cannon on left wall, 600px down, shooting once per second
-    createCannon('right', 100, 300)// cannon on right wall, 600px up, shooting one per second
-    createCannon('top', 200, 400)// cannon on top wall, 700px down, shooting one per second
+
+
+
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
@@ -72,20 +72,26 @@ $(function () {
 
   registerSetup(setup);
 });
-  //createPlatforms
-    createPlatform(100, 200, 100, 10)
-    createPlatform(400, 300, 100, 10)
-    createPlatform(200, 300, 100, 10)
-    createPlatform(500, 450, 100, 10)
 
-  //createCollectables
-    createCollectable('Amanda', 100, 200, 7, 0.9)
-    createCollectable('Jolina', 200, 150), 6, 0.7
-    createCollectable('Harley', 300, 300, 5, 0.8)
+//create walls
 
-  //createCannons
-    createCannon('left', 100, 200)// cannon on left wall, 600px down, shooting once per second
-    createCannon('right', 100, 300)// cannon on right wall, 600px up, shooting one per second
-    createCannon('top', 200, 400)
+//Walls//
+createPlatform(150, 0, 20, 500);
+createPlatform(1200, 625, 20, 150);
 
-          
+//Platforms//
+createPlatform(1200, 625, 200, 20);
+createPlatform(150, 500, 950, 20);
+//createPlatform(0, 375, 300, 20);
+
+//Cannon
+//createCannon("Left" 150, 10, 30, 30);
+
+//Collectables//
+//grace, steve, diamond, kennedi, max, and database//
+createCollectable("grace", 300, 650);
+createCollectable("steve", 200, 400);
+createCollectable("diamond", 300, 400);
+createCollectable("kennedi", 200 , 400);
+createCollectable("max", 700, 400);
+createCollectable("database", 800, 400);
